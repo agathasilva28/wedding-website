@@ -34,9 +34,10 @@ let search = window.location.search;
 let invite = search.split("=")[1];
 
 const people = invites[invite];
+if (people) {
+    let htmlForPeople = `Convidamos <b>${people}</b> para se juntar a nos para celebra a união entre Agatha e Joe`;
 
-let htmlForPeople = `Convidamos <b>${people}</b> para se juntar a nos para celebra a união entre Agatha e Joe`;
+    div = document.getElementById('people');
 
-div = document.getElementById('people');
-
-div.innerHTML = htmlForPeople;
+    div.innerHTML = htmlForPeople;
+}
