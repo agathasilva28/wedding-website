@@ -1,0 +1,195 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #687259;
+    color: #F4ECE2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 91px;
+    box-sizing: border-box;
+    padding: 40px 20px 40px;
+}
+
+.hero::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/two.png');
+    display: block;
+    position: absolute;
+    background-size: 30%;
+    opacity: 0.15;
+    bottom: 0;
+    left: 0;
+}
+
+.hero .title {
+    font-family: 'Passions Conflict', cursive;
+    font-size: 30vh;
+    margin: 0px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.hero .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.initials {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.initials .line {
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    background-color: #F4ECE2;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+.initials .line::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #F4ECE2;
+    border-radius: 100%;
+    background-color: #687259;
+    margin: -6px auto;
+}
+
+.menu {
+    background-color: #F4ECE2;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px;
+    z-index: 99999999999999999;
+    height: 39px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.section {
+    padding: 85px 0;
+    background-color: #F4ECE2;
+}
+
+.section--white {
+    background-color: #E6CEBC;  
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid #8E412E;
+    color: #8E412E;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.wedding .media {
+    text-align: center;
+}
+
+.wedding .media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 48px;
+}
+
+.flex .media {
+    width: 50%;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.media h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #8E412E;
+    margin-bottom: 25px;
+}
+
+.gifts {
+    background-color: #A2A182;
+    color: #F4ECE2;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom:60px;
+}
+
+@media (max-width:767px) {
+    .flex .media {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .media:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    .hero .title {
+        font-size: 147px;
+        line-height: 1;
+    }
+
+    .hero::after {
+        background-size: 350px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
