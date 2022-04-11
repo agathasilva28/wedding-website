@@ -21,12 +21,11 @@ const invites = {
     20: "Caima",
     21: "Tota",
     22: "Martin e um acompanhante",
-    23: "Manoel",
-    24: "Henrique",
-    25: "Doug",
-    26: "Lourdes",
-    27: "Carol e Cauber",
-    28: "Deta"
+    23: "Manoel e Henrique",
+    24: "Doug",
+    25: "Lourdes",
+    26: "Carol e Cauber",
+    27: "Deta"
 }
 
 let search = window.location.search;
