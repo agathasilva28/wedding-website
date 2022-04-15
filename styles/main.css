@@ -111,6 +111,11 @@ body {
     margin: 0 auto;
 }
 
+.button--white {
+    border-color: #F4ECE2;
+    color: #F4ECE2;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -162,6 +167,16 @@ body {
     font-size: 42px;
     text-align: center;
     margin-bottom:60px;
+}
+
+.text {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text p {
+    margin-bottom: 20px;
 }
 
 @media (max-width:767px) {
