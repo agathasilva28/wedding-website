@@ -98,7 +98,12 @@ body {
 }
 
 .section--white {
-    background-color: #E6CEBC;  
+    background-color: #E6CEBC;
+}
+
+.section--red {
+    background-color: #8E412E;
+    color: #F4ECE2;
 }
 
 .button {
@@ -109,6 +114,7 @@ body {
     padding: 10px 20px;
     text-transform: uppercase;
     margin: 0 auto;
+    background: transparent;
 }
 
 .button--white {
@@ -147,6 +153,10 @@ body {
     padding: 0 60px;
 }
 
+.flex > div {
+    flex: 1;
+}
+
 .media h3 {
     text-transform: uppercase;
     font-size: 32px;
@@ -179,11 +189,19 @@ body {
     margin-bottom: 20px;
 }
 
+.padding-custom {
+    padding: 20px 0 0 40px;
+}
+
 @media (max-width:767px) {
     .flex .media {
         width: 100%;
         text-align: center;
         padding: 0;
+    }
+
+    .padding-custom {
+        padding: 40px 0 0 0;
     }
 
     .flex {
@@ -207,3 +225,41 @@ body {
         display: none;
     }
 }
+
+iframe .panel {
+    background: transparent;
+}
+
+.form label,
+.form input,
+.form textarea {
+    display: block;
+    width: 100%;
+}
+
+.form label {
+    margin-bottom: 5px;
+}
+
+.form input {
+    height: 40px;
+}
+
+.form input,
+.form textarea {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #F4ECE2;
+    color: #F4ECE2;
+}
+
+.form textarea {
+    height: 200px;
+}
+
+::placeholder {
+    color: #F4ECE2;
+    opacity: 0.7;
+  }
