@@ -38,3 +38,39 @@ if (people) {
 
     div.innerHTML = people;
 }
+
+future = Date.parse("jun 12, 2022 01:30:00");
+now = new Date();
+diff = future - now;
+
+SEC = 1000;
+MIN = 1000 * 60;
+HOUR = MIN * 60;
+DAY = HOUR * 24;
+  
+function updateTimer() {
+    future = Date.parse("jun 4, 2022 15:30:00");
+    now = new Date();
+    diff = future - now;
+
+    days = Math.floor(diff / DAY);
+    hours = Math.floor(diff / HOUR);
+    mins = Math.floor(diff / MIN);
+    secs = Math.floor(diff / SEC);
+
+    d = days.toString().padStart(2, '0');
+    h = (hours - days * 24).toString().padStart(2, '0');
+    m = (mins - hours * 60).toString().padStart(2, '0');
+    s = (secs - mins * 60).toString().padStart(2, '0');
+
+    document.getElementById("timer")
+        .innerHTML =
+        '<div><span>Faltam:</span></div>' +
+        '<div>' + d + '<span>dias</span></div>' +
+        '<div>' + h + '<span>horas</span></div>' +
+        '<div>' + m + '<span>minutos</span></div>' +
+        '<div>' + s + '<span>segundos</span></div>';
+}
+
+updateTimer();
+setInterval('updateTimer()', 1000);

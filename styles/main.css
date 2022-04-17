@@ -193,6 +193,27 @@ body {
     padding: 20px 0 0 40px;
 }
 
+.timer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer div {
+    padding: 3px;
+}
+
+.timer div:first-child {
+    padding-right: 10px;
+}
+
+.timer span {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
 @media (max-width:767px) {
     .flex .media {
         width: 100%;
