@@ -21,7 +21,7 @@ const invites = {
     20: "Caima",
     21: "Tota",
     22: "Martin e um acompanhante",
-    23: "Manoel e Henrique",
+    23: "Luiz e Joana",
     24: "Doug",
     25: "Lourdes",
     26: "Carol e Glauber",
