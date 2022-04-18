@@ -24,7 +24,7 @@ const invites = {
     23: "Manoel e Henrique",
     24: "Doug",
     25: "Lourdes",
-    26: "Carol e Cauber",
+    26: "Carol e Glauber",
     27: "Deta"
 }
 
